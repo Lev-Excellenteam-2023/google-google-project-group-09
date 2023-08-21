@@ -1,7 +1,5 @@
 import unittest
-import sentence_completion
-
-
+from sentence_completion import trie_ds
 
 class TestTrie(unittest.TestCase):
     def setUp(self):
