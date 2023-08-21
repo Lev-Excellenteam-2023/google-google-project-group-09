@@ -33,3 +33,17 @@ def process_folder(folder_path: str, trie: trie_ds.Trie):
             if file.endswith('.txt'):
                 file_path = os.path.join(root, file)
                 process_text_file(file_path, trie)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

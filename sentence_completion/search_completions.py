@@ -13,7 +13,24 @@ def search_completions(searching: str, trie: trie_ds.Trie, max_results=5):
     Returns:
         list: A list of sentences where each word in the input sentence exists.
     """
-    return []
+    words = searching.split()
+    if len(words) == 1:
+        prefix = words[0]
+        locations = trie.search(prefix)
+        if locations:
+            completions = []
+            for file_path, positions in locations.items():
+                with open(file_path, 'r', encoding='utf-8') as file:
+                    lines = file.readlines()
+                    for line_number, offset in positions:
+                        line = lines[line_number - 1]
+                        completion = line.strip()
+                        completions.append(completion)
+                        if len(completions) >= max_results:
+                            return completions
+            return completions
+    else:
+        return []
 
 
 
