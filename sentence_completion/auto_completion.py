@@ -92,20 +92,20 @@ class Autocomplete:
     return list_words
 
     def auto_complete(self, prefix):
-        dict1 = {}
-        dict2 = {}
+        dict_merged = {}
+        dict_word = {}
         changed = []
         add = []
         deleted = []
         for char in prefix:
-            dict1 = dict2
-            dict2 = search(char)
-            if not dict2 == {}:
-                if not dict1 == {}:
-                    dict2 = findIntersection(dict1, dict2)
+            dict_merged = dict_word
+            dict_word = search(char)
+            if not dict_word == {}:
+                if not dict_merged == {}:
+                    dict_word = findIntersection(dict_merged, dict_word)
                     # if there is no intersection
-                    if dict2 == {}:
-                        self.auto_complete_correction(dict1, prefix, char)
+                    if dict_word == {}:
+                        self.auto_complete_correction(dict, prefix, char)
                 else:
                     continue
             else:
@@ -117,6 +117,16 @@ class Autocomplete:
         deleted = self.find_words_add(self, char)
         changed = self.find_words_changed(self, char)
 
+
+def auto_complete(prefix):
+    word1=prefix[0]
+    dict1=search(word1)
+    word2=''
+    for x in range(1, n+1):
+       word2=prefix[x]
+       dict2=search(word2)
+       dict1=find_Intersection(dict1,dict2)
+    return Autocomplete('unchanged',prefix,0,dict1)
 
 
 
