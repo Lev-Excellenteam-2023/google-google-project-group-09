@@ -11,11 +11,10 @@
 
 ## Algorithms & Structures
 
-- **Example Algorithm**: Used to analyze fruit price trends. *(This is just an example. Replace with your algorithm or data structure and its role in the code flow.)*
 
 ## Detailed Code Flow
 
-*The code flow of the project involves the following steps:*
+  **The code flow of the project involves the following steps:**
 
 ### 1.Command Line Interface (CLI) Setup:*
 
