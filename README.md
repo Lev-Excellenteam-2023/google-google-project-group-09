@@ -16,7 +16,7 @@
 
   **The code flow of the project involves the following steps:**
 
-### 1.Command Line Interface (CLI) Setup:*
+### 1.Command Line Interface (CLI) Setup:
 
   *The program uses argparse to set up the command line interface.
   The -l flag is used to load and analyze text files when executing the program.*
@@ -36,11 +36,10 @@
 
   *After displaying suggestions, the program prompts the user for further input or to restart by typing '#'.
   To run the program, open a terminal and execute the following command:*
-
-  ***$ python cli.py -l***
+  
+![image](https://github.com/Lev-Excellenteam-2023/google-google-project-group-09/assets/80812161/3833294d-e827-445e-9b74-4f5d8f542e49)
 
 *This command initializes the search engine and provides users with intelligent sentence completion suggestions based on their input.*
 
 
-**Hint**: This section is just a placeholder example of fruit prices. Replace it with a clear and detailed flow of your actual project's logic, algorithms, and processes.
 
