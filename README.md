@@ -15,29 +15,32 @@
 
 ## Detailed Code Flow
 
-*The code flow of the project involves the following steps:
+*The code flow of the project involves the following steps:*
 
-Command Line Interface (CLI) Setup:
+### 1.Command Line Interface (CLI) Setup:*
 
-The program uses argparse to set up the command line interface.
-The -l flag is used to load and analyze text files when executing the program.
-Initialization and User Input:
+  *The program uses argparse to set up the command line interface.
+  The -l flag is used to load and analyze text files when executing the program.*
+  
+### 2.Initialization and User Input:
 
-If the -l flag is provided in the terminal, the system loads and prepares text files using the load_database_process function.
-The program prompts the user for input via the CLI using the search_engine_logic function.
-Search Engine Logic and Display:
+  *If the -l flag is provided in the terminal, the system loads and prepares text files using the load_database_process function.
+  The program prompts the user for input via the CLI using the search_engine_logic function.*
+  
+### 3.Search Engine Logic and Display:
 
-The user's input is cleaned using the clean_text function, which processes the text for effective search.
-The search engine's logic is triggered to find and display the top 5 sentence completion suggestions.
-Suggestions are displayed to the user.
-Continuation or Restart:
+  *The user's input is cleaned using the clean_text function, which processes the text for effective search.
+  The search engine's logic is triggered to find and display the top 5 sentence completion suggestions.
+  Suggestions are displayed to the user.*
+  
+### 4.Continuation or Restart:
 
-After displaying suggestions, the program prompts the user for further input or to restart by typing '#'.
-To run the program, open a terminal and execute the following command:
+  *After displaying suggestions, the program prompts the user for further input or to restart by typing '#'.
+  To run the program, open a terminal and execute the following command:*
 
-$ python cli.py -l
+  ***$ python cli.py -l***
 
-This command initializes the search engine and provides users with intelligent sentence completion suggestions based on their input.*
+*This command initializes the search engine and provides users with intelligent sentence completion suggestions based on their input.*
 
 
 **Hint**: This section is just a placeholder example of fruit prices. Replace it with a clear and detailed flow of your actual project's logic, algorithms, and processes.
