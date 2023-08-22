@@ -45,7 +45,7 @@ class Trie:
             node.locations[file_path] = []
         node.locations[file_path].append((line_number, offset))
 
-    def search(self, prefix:str):
+    def search(self, prefix: str):
         """
         Searches for all word locations that match the given prefix.
 
