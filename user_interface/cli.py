@@ -4,10 +4,8 @@ import re
 import os
 import sys
 
-# Get the directory of the current script
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Add the parent directory to sys.path
 parent_directory = os.path.dirname(current_directory)
 sys.path.append(parent_directory)
 
@@ -15,7 +13,6 @@ from sentence_completion import trie_processor
 from sentence_completion import search_complitions
 
 
-# Define your search engine logic here
 def clean_text(text):
     """
        Clean the input text by converting to lowercase, removing punctuation, and extra spaces.
